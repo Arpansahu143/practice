@@ -1,0 +1,71 @@
+<!-- before and after pseudo selctor -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selector</title>
+ </head>
+
+ <style>
+    body{
+        background-color: black;
+        color:white;
+    margin:0px;
+    padding:0px;
+    }
+
+    header::before{
+        background:url('kk.jpeg') no-repeat center center/cover;
+        content:" ";
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        z-index:-1;
+        opacity:0.5;
+    }
+
+    .navigation{
+        display:flex;
+        
+    }
+    li{
+        list-style:none;
+        padding:34px 23px;
+    }
+    section{
+        height:340px;
+        
+        margin: 3px 23px;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+    }
+    section::before{
+        content:"this is some content";
+    }
+    p{
+        text-align: center;
+    }
+ </style>
+ <body>
+    <header>
+
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">HOME</li>
+                <li class="item">ABOUT</li>
+                <li class="item">SERVICES</li>
+                <li class="item">CONTACT US</li>
+            </ul>
+        </nav>
+        <section>
+            <h1>WELCOME TO MY WEBPAGE</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, labore quo quibusdam porro soluta sit, corrupti quasi repudiandae, provident ad alias sequi nisi minus nam eius natus ullam suscipit nemo magnam nihil est aut?</p>
+        </section>
+    </header>
+ </body>
+ </html>
