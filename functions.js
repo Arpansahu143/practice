@@ -31,6 +31,11 @@ console.log("--------------------------------");
 
 function mul(o, j,k=2) {
     return o * j*k;
-  }
-  result1 = mul(5, 1);
-  console.log("the multiplication is ", result1);
+}
+result1 = mul(5, 1);
+console.log("the multiplication is ", result1);
+
+
+
+console.log("--------------------------------");
+
