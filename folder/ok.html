@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+
+  <script>
+    $(document).ready(function(){
+    $("button").click(function(){
+    $("div").css("color", "blue").slideUp(2000).slideDown(2000);
+    });
+    $("p").click(function(){
+    $(this).hide()
+    });
+    });
+    </script>
+   <style>
+    ol{
+      background:green;
+      width:10px;
+      padding:20px;
+      list-style: lower-alpha;
+    }
+    ol li{
+      background:#ff4656;
+      color:darkred;
+      padding:5px;
+      margin-left: 35px;
+    }
+   </style>
+ </head>
+ <body>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi rerum, molestias aliquid odio culpa ex quia voluptates dignissimos corporis laboriosam?</p>
+<div>ok bro</div>
+ <button>Hit Me!</button>
+ <ol>
+  <li>tea</li>
+  <li>coffee</li>
+  <li>water</li>
+</ol>
+<form action="">
+  <textarea name="" id="" style="height:100px; width:100px;"></textarea>
+</form>
+ </body>
+ </html>
+
