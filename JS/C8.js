@@ -33,4 +33,13 @@ for(let b of "arpan"){
 }
 
 
+// do while loop 
+let b=5
+let i=0
+do{
+    console.log(i)
+    i++
+}while(i<b)
+
+
 
