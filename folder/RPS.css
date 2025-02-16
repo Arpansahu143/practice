@@ -1,0 +1,80 @@
+h1{
+    margin-left: 31%;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    position: relative;
+    height: 782px;
+    width: 500px;
+    overflow: hidden; 
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-left:0;
+    background: url('https://tse2.mm.bing.net/th?id=OIP.1CkVCE6yhddTFRHmUDFpewHaEK&pid=Api&P=0&h=180');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7; 
+    z-index: -1; 
+}
+
+input[type="text"]{
+    margin-top: 100px;
+    margin-left:420px;
+}
+
+
+
+#choice {
+    width: 250px;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#choice:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.6);
+}
+
+
+#play {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+#play:hover {
+    background-color: #2980b9;
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.4);
+}
+
+#play:active {
+    transform: scale(0.95);
+}
